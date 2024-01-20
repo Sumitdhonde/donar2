@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .macbook-air {
+        background-color: #596097;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .macbook-air .div {
+        background-color: #596097;
+        overflow: hidden;
+        width: 1280px;
+        height: 2256px;
+        position: relative;
+      }
+
+      .macbook-air .group {
+        position: absolute;
+        width: 1284px;
+        height: 911px;
+        top: 728px;
+        left: 0;
+      }
+
+      .macbook-air .overlap-group {
+        position: absolute;
+        width: 1280px;
+        height: 193px;
+        top: 451px;
+        left: 0;
+        background-color: #fff7f7;
+      }
+
+      .macbook-air .frame {
+        display: flex;
+        width: 452px;
+        height: 107px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 29px;
+        left: 763px;
+        background-color: #cfc148;
+        border-radius: 10px;
+      }
+
+      .macbook-air .text-wrapper {
+        position: relative;
+        width: fit-content;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .text-wrapper-2 {
+        position: absolute;
+        width: 219px;
+        top: 52px;
+        left: 65px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame-2 {
+        display: inline-flex;
+        flex-direction: column;
+        height: 418px;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 30px;
+        position: absolute;
+        top: 0;
+        left: 60px;
+      }
+
+      .macbook-air .div-wrapper {
+        display: flex;
+        width: 334px;
+        height: 103px;
+        align-items: center;
+        gap: 10px;
+        padding: 0px 10px 10px;
+        position: relative;
+      }
+
+      .macbook-air .text-wrapper-3 {
+        position: relative;
+        width: fit-content;
+        margin-top: -6px;
+        margin-bottom: -4px;
+        font-family: "Inknut Antiqua-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .p {
+        position: relative;
+        width: 688px;
+        height: 113px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .text-wrapper-4 {
+        position: relative;
+        width: 558px;
+        height: 90px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #ffffff;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .for-media-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 452px;
+        height: 233px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 45px 30px;
+        position: absolute;
+        top: 111px;
+        left: 758px;
+        background-color: #fff7f7;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+
+      .macbook-air .for-media {
+        position: relative;
+        width: 311px;
+        margin-top: -31px;
+        margin-bottom: -29px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: transparent;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .span {
+        color: #000000;
+      }
+
+      .macbook-air .text-wrapper-5 {
+        color: #2d1ed9;
+        text-decoration: underline;
+      }
+
+      .macbook-air .l {
+        width: 334px;
+        height: 220px;
+        top: 664px;
+        left: 60px;
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .macbook-air .text-wrapper-6 {
+        position: absolute;
+        width: 406px;
+        top: 856px;
+        left: 415px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .overlap {
+        position: absolute;
+        width: 1705px;
+        height: 278px;
+        top: 1694px;
+        left: -173px;
+      }
+
+      .macbook-air .text-wrapper-7 {
+        position: absolute;
+        width: 102px;
+        top: 233px;
+        left: 762px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .overlap-2 {
+        position: absolute;
+        width: 1705px;
+        height: 267px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .text-wrapper-8 {
+        position: absolute;
+        width: 111px;
+        top: 222px;
+        left: 1125px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .text-wrapper-9 {
+        position: absolute;
+        width: 86px;
+        top: 222px;
+        left: 418px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 36px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame-3 {
+        display: flex;
+        width: 1705px;
+        align-items: flex-end;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .frame-4 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 29px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .overlap-group-wrapper {
+        position: relative;
+        width: 288px;
+        height: 170px;
+      }
+
+      .macbook-air .overlap-group-2 {
+        position: relative;
+        height: 170px;
+      }
+
+      .macbook-air .rectangle {
+        position: absolute;
+        width: 288px;
+        height: 170px;
+        top: 0;
+        left: 0;
+        background-color: #d9d9d980;
+        transform: rotate(180deg);
+      }
+
+      .macbook-air .rectangle-2 {
+        position: absolute;
+        width: 242px;
+        height: 137px;
+        top: 17px;
+        left: 23px;
+        background-color: #d9d9d9;
+        transform: rotate(180deg);
+      }
+
+      .macbook-air .rectangle-3 {
+        position: absolute;
+        width: 242px;
+        height: 137px;
+        top: 16px;
+        left: 23px;
+        background-color: #d9d9d9;
+        transform: rotate(180deg);
+      }
+
+      .macbook-air .rectangle-wrapper {
+        position: relative;
+        width: 373px;
+        height: 223px;
+        background-color: #d9d9d980;
+      }
+
+      .macbook-air .rectangle-4 {
+        position: relative;
+        width: 313px;
+        height: 180px;
+        top: 22px;
+        left: 30px;
+        background-color: #d9d9d9;
+      }
+
+      .macbook-air .text-wrapper-10 {
+        position: relative;
+        width: 106px;
+        height: 45px;
+        margin-left: -42px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .text-wrapper-11 {
+        position: relative;
+        width: 86px;
+        height: 43px;
+        margin-right: -44px;
+        margin-left: -42px;
+        font-family: "Jockey One-Regular", Helvetica;
+        font-weight: 400;
+        color: #fff7f7;
+        font-size: 40px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .overlap-3 {
+        position: absolute;
+        width: 1280px;
+        height: 668px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .head-img {
+        display: flex;
+        width: 1280px;
+        align-items: flex-start;
+        gap: 81px;
+        position: absolute;
+        top: 139px;
+        left: 0;
+        overflow-x: scroll;
+      }
+
+      .macbook-air .s {
+        position: relative;
+        width: 1280px;
+        height: 529px;
+        object-fit: cover;
+      }
+
+      .macbook-air .img {
+        position: relative;
+        width: 1280px;
+        height: 529px;
+      }
+
+      .macbook-air .arrow-right-circle {
+        position: absolute;
+        width: 87px;
+        height: 87px;
+        top: 360px;
+        left: 1171px;
+        background-image: url(./img/s.jpeg);
+        background-size: cover;
+        background-position: 50% 50%;
+      }
+
+      .macbook-air .nav-bar {
+        position: absolute;
+        width: 1280px;
+        height: 147px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .overlap-4 {
+        position: relative;
+        width: 1282px;
+        height: 149px;
+        top: -1px;
+        left: -1px;
+        background-color: #fff7f7;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: #000000;
+      }
+
+      .macbook-air .l-2 {
+        width: 207px;
+        height: 147px;
+        top: 0;
+        left: 0;
+        position: absolute;
+        object-fit: cover;
+      }
+
+      .macbook-air .frame-5 {
+        display: flex;
+        width: 923px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 95px;
+        position: absolute;
+        top: 50px;
+        left: 296px;
+      }
+
+      .macbook-air .frame-6 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper-12 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Black", Helvetica;
+        font-weight: 900;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .eligibility {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .frame-7 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper-13 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .text-wrapper-14 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .button {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 216px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        background-color: #ccbb23cc;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help {
+        position: relative;
+        width: fit-content;
+        margin-top: -5px;
+        margin-bottom: -3px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="macbook-air">
+      <div class="div">
+        <div class="group">
+          <div class="overlap-group">
+            <div class="frame">
+              <p class="text-wrapper">Yes! I want to help</p>
+            </div>
+            <div class="text-wrapper-2">INTERESTED IN CONTRIBUTING</div>
+          </div>
+          <div class="frame-2">
+            <div class="div-wrapper">
+              <div class="text-wrapper-3">Head Office</div>
+            </div>
+            <p class="p">
+              C103/C104, 1st Floor, Remi Bizcourt, Shah Industrial Estate,Off
+              Veera Desai Road, Andheri West,Mumbai 400053, Maharashtra
+            </p>
+            <p class="text-wrapper-4">
+              +91-22 48932226 (Mon-Fri 9:30am-6pm IST Except public holidays)
+            </p>
+          </div>
+          <div class="for-media-wrapper">
+            <p class="for-media">
+              <span class="span">For media/communications: </span>
+              <a
+                href="mailto:media@educategirls.ngo"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="text-wrapper-5">media@educategirls.ngo<br /></span
+              ></a>
+              <span class="span">For donation related queries: <br /></span>
+              <a
+                href="mailto:hello@educategirls.ngo"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="text-wrapper-5">hello@educategirls.ngo<br /></span
+              ></a>
+              <span class="span">Other queries: </span>
+              <a
+                href="mailto:info.in@educategirls.ngo"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><span class="text-wrapper-5"
+                  >info.in@educategirls.ngo<br /></span
+              ></a>
+            </p>
+          </div>
+          <img class="l" src="img/s.jpeg" />
+          <p class="text-wrapper-6">Keep helping . Stay update</p>
+        </div>
+        <div class="overlap">
+          <div class="text-wrapper-7">HEALTH</div>
+          <div class="overlap-2">
+            <div class="text-wrapper-8">SHELTER</div>
+            <div class="text-wrapper-9">FOOD</div>
+            <div class="frame-3">
+              <div class="frame-4">
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                    <div class="rectangle"></div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                </div>
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                    <div class="rectangle"></div>
+                    <div class="rectangle-3"></div>
+                  </div>
+                </div>
+                <div class="rectangle-wrapper">
+                  <div class="rectangle-4"></div>
+                </div>
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                    <div class="rectangle"></div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                </div>
+                <div class="overlap-group-wrapper">
+                  <div class="overlap-group-2">
+                    <div class="rectangle"></div>
+                    <div class="rectangle-2"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-wrapper-10">SHELTER</div>
+              <div class="text-wrapper-11">FOOD</div>
+            </div>
+          </div>
+        </div>
+        <div class="overlap-3">
+          <div class="head-img">
+            <img class="s" src="img/s.jpeg" />
+            <img class="img" src="img/s.jpeg" />
+            <img class="img" src="img/s.jpeg" />
+          </div>
+          <div class="arrow-right-circle"></div>
+          <div class="nav-bar">
+            <div class="overlap-4">
+              <img class="l-2" src="img/s.jpeg" />
+              <div class="frame-5">
+                <div class="frame-6">
+                  <div class="text-wrapper-12">
+                    <a href="index.html">
+                      <div class="">Home</div>
+                    </a>
+                  </div>
+                </div>
+                <div class="eligibility">
+                  <div class="frame-7">
+                    <div class="text-wrapper-13">
+                      <a href="eligi.html">
+                        <div class="">eligibility</div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="frame-6">
+                  <div class="text-wrapper-14">
+                    <a href="contact.html">
+                      <div class="">contact</div>
+                    </a>
+                  </div>
+                </div>
+                <button class="button">
+                  <div class="yes-i-want-to-help">
+                    <a href="donar.html">
+                      <div class="">Home</div>
+                    </a>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

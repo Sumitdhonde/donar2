@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .macbook-air {
+        background-color: #596097;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .macbook-air .div {
+        background-color: #596097;
+        width: 1280px;
+        height: 1713px;
+        position: relative;
+      }
+
+      .macbook-air .nav-bar {
+        position: absolute;
+        width: 1280px;
+        height: 147px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .overlap-group {
+        position: relative;
+        width: 1282px;
+        height: 149px;
+        top: -1px;
+        left: -1px;
+        background-color: #fff7f7;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: #000000;
+      }
+
+      .macbook-air .l {
+        position: absolute;
+        width: 207px;
+        height: 147px;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .macbook-air .frame {
+        display: flex;
+        width: 923px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 95px;
+        position: absolute;
+        top: 50px;
+        left: 296px;
+      }
+
+      .macbook-air .div-wrapper {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .eligibility {
+        display: inline-flex;
+        flex-direction: column;
+        height: 58px;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .frame-2 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        flex: 0 0 auto;
+        margin-bottom: -1px;
+      }
+
+      .macbook-air .text-wrapper-2 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .button {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 216px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        background-color: #ccbb23cc;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help {
+        position: relative;
+        width: fit-content;
+        margin-top: -5px;
+        margin-bottom: -3px;
+        font-family: "Inter-Black", Helvetica;
+        font-weight: 900;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .s {
+        top: 249px;
+        object-fit: cover;
+        position: absolute;
+        width: 681px;
+        height: 417px;
+        left: 38px;
+      }
+
+      .macbook-air .img {
+        top: 733px;
+        position: absolute;
+        width: 681px;
+        height: 417px;
+        left: 38px;
+      }
+
+      .macbook-air .overlap {
+        position: absolute;
+        width: 452px;
+        height: 1016px;
+        top: 171px;
+        left: 758px;
+        background-color: #fff7f780;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help-wrapper {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 329px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 928px;
+        left: 54px;
+        background-color: #ccbb23cc;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help-2 {
+        position: relative;
+        width: fit-content;
+        margin-top: -13.5px;
+        margin-bottom: -11.5px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .overlap-2 {
+        position: absolute;
+        width: 437px;
+        height: 242px;
+        top: 13px;
+        left: 12px;
+      }
+
+      .macbook-air .frame-3 {
+        display: flex;
+        flex-direction: column;
+        width: 437px;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .group {
+        position: relative;
+        width: 441px;
+        height: 66px;
+        margin-left: -2px;
+        margin-right: -2px;
+      }
+
+      .macbook-air .label {
+        display: flex;
+        flex-direction: column;
+        width: 441px;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 3px 5px;
+        position: relative;
+      }
+
+      .macbook-air .text-wrapper-3 {
+        position: relative;
+        width: 292px;
+        height: 23px;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .frame-4 {
+        position: relative;
+        width: 420px;
+        height: 32px;
+        background-color: #d4c74e99;
+        border-radius: 10px;
+      }
+
+      .macbook-air .text-wrapper-4 {
+        position: absolute;
+        width: 188px;
+        top: 33px;
+        left: 12px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000b2;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .in-which-sector-you {
+        position: absolute;
+        width: 313px;
+        height: 33px;
+        top: 209px;
+        left: 10px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .overlap-3 {
+        position: absolute;
+        width: 322px;
+        height: 338px;
+        top: 270px;
+        left: 19px;
+      }
+
+      .macbook-air .frame-5 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .frame-6 {
+        display: inline-flex;
+        height: 33px;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+      }
+
+      .macbook-air .component {
+        position: relative;
+        width: 25px;
+        height: 25px;
+      }
+
+      .macbook-air .text-wrapper-5 {
+        position: relative;
+        width: 112px;
+        height: 29px;
+        margin-top: -1px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000cc;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame-7 {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .frame-8 {
+        display: inline-flex;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+        flex: 0 0 auto;
+        opacity: 0.5;
+      }
+
+      .macbook-air .p {
+        position: absolute;
+        width: 313px;
+        height: 33px;
+        top: 305px;
+        left: 9px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame-9 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 0px 10px;
+        position: absolute;
+        top: 623px;
+        left: 25px;
+      }
+
+      .macbook-air .rectangle {
+        position: absolute;
+        width: 1280px;
+        height: 38px;
+        top: 1219px;
+        left: 0;
+        background-color: #fff7f7;
+      }
+
+      .macbook-air .overlap-4 {
+        position: absolute;
+        width: 516px;
+        height: 291px;
+        top: 1312px;
+        left: 89px;
+        background-color: #d9d9d9;
+      }
+
+      .macbook-air .text-wrapper-6 {
+        position: absolute;
+        width: 138px;
+        top: 28px;
+        left: 186px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .overlap-5 {
+        position: absolute;
+        width: 516px;
+        height: 291px;
+        top: 1312px;
+        left: 675px;
+        background-color: #d9d9d9;
+      }
+
+      .macbook-air .text-wrapper-7 {
+        position: absolute;
+        width: 173px;
+        top: 29px;
+        left: 168px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="macbook-air">
+      <div class="div">
+        <div class="nav-bar">
+          <div class="overlap-group">
+            <img class="l" src="img/l1-3.png" />
+            <div class="frame">
+              <div class="div-wrapper">
+                <a href="index.html">
+                  <div class="text-wrapper">Home</div>
+                </a>
+              </div>
+              <div class="eligibility">
+                <a href="eligi.html">
+                  <div class="text-wrapper">eligibility</div>
+                </a>
+              </div>
+              <a href="contact.html">
+                <div class="text-wrapper">contact</div>
+              </a>
+
+              <button class="button">
+                <a href="donar.html">
+                  <div class="text-wrapper">Donate</div>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <img class="s" src="img/s.jpeg" />
+        <img class="img" src="img/s.jpeg" />
+        <div class="overlap">
+          <button class="yes-i-want-to-help-wrapper">
+            <div class="yes-i-want-to-help-2">Apply Now!</div>
+          </button>
+          <div class="overlap-2">
+            <div class="frame-3">
+              <div class="group">
+                <div class="label">
+                  <div class="text-wrapper-3">Name</div>
+                  <div class="frame-4"></div>
+                  <div class="text-wrapper-4">name</div>
+                </div>
+              </div>
+              <div class="group">
+                <div class="label">
+                  <div class="text-wrapper-3">Email</div>
+                  <div class="frame-4"></div>
+                  <div class="text-wrapper-4">email</div>
+                </div>
+              </div>
+              <div class="group">
+                <div class="label">
+                  <div class="text-wrapper-3">Payment method</div>
+                  <div class="frame-4"></div>
+                </div>
+              </div>
+            </div>
+            <p class="in-which-sector-you">
+              In which sector you want&nbsp;&nbsp;to help
+            </p>
+          </div>
+          <div class="overlap-3">
+            <div class="frame-5">
+              <div class="frame-6">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Food</div>
+              </div>
+              <div class="frame-7">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Shelter</div>
+              </div>
+              <div class="frame-7">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Health</div>
+              </div>
+              <div class="frame-7">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Farming</div>
+              </div>
+              <div class="frame-8">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Women</div>
+              </div>
+              <div class="frame-8">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Child</div>
+              </div>
+              <div class="frame-7">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Technology</div>
+              </div>
+              <div class="frame-7">
+                <img class="component" src="img/radio-button-untick.svg" />
+                <div class="text-wrapper-5">Education</div>
+              </div>
+            </div>
+            <p class="p">In which sector you want&nbsp;&nbsp;to help</p>
+          </div>
+          <div class="frame-9">
+            <div class="frame-6">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+            <div class="frame-7">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+            <div class="frame-7">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+            <div class="frame-7">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+            <div class="frame-7">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+            <div class="frame-7">
+              <img class="component" src="img/radio-button-untick.svg" />
+              <div class="text-wrapper-5">NGO</div>
+            </div>
+          </div>
+        </div>
+        <div class="rectangle"></div>
+        <div class="overlap-4"><div class="text-wrapper-6">RESOURCES</div></div>
+        <div class="overlap-5">
+          <div class="text-wrapper-7">FOLLOW US ON</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

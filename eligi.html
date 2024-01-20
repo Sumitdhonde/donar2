@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .macbook-air {
+        background-color: #596097;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+      }
+
+      .macbook-air .div {
+        background-color: #596097;
+        width: 1280px;
+        height: 1509px;
+        position: relative;
+      }
+
+      .macbook-air .s {
+        top: 188px;
+        position: absolute;
+        width: 681px;
+        height: 417px;
+        left: 34px;
+        object-fit: cover;
+      }
+
+      .macbook-air .img {
+        top: 638px;
+        position: absolute;
+        width: 681px;
+        height: 417px;
+        left: 34px;
+        object-fit: cover;
+      }
+
+      .macbook-air .overlap {
+        position: absolute;
+        width: 454px;
+        height: 872px;
+        top: 169px;
+        left: 759px;
+      }
+
+      .macbook-air .rectangle {
+        position: absolute;
+        width: 452px;
+        height: 872px;
+        top: 0;
+        left: 0;
+        background-color: #fff7f780;
+        border-radius: 10px;
+      }
+
+      .macbook-air .group {
+        position: absolute;
+        width: 439px;
+        height: 767px;
+        top: 29px;
+        left: 15px;
+      }
+
+      .macbook-air .overlap-group {
+        position: absolute;
+        width: 437px;
+        height: 419px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .text-wrapper {
+        position: absolute;
+        width: 272px;
+        height: 33px;
+        top: 386px;
+        left: 10px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame {
+        display: flex;
+        flex-direction: column;
+        width: 437px;
+        align-items: center;
+        gap: 6px;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .label-wrapper {
+        position: relative;
+        width: 441px;
+        height: 66px;
+        margin-left: -2px;
+        margin-right: -2px;
+      }
+
+      .macbook-air .label {
+        display: flex;
+        flex-direction: column;
+        width: 441px;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 3px 5px;
+        position: relative;
+      }
+
+      .macbook-air .text-wrapper-2 {
+        position: relative;
+        width: 292px;
+        height: 23px;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .frame-2 {
+        position: relative;
+        width: 420px;
+        height: 32px;
+        background-color: #d4c74e99;
+        border-radius: 10px;
+      }
+
+      .macbook-air .text-wrapper-3 {
+        position: absolute;
+        width: 188px;
+        top: 33px;
+        left: 12px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000b2;
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .doc-box {
+        display: flex;
+        flex-direction: column;
+        width: 433px;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 3px 5px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .frame-3 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper-4 {
+        position: relative;
+        width: 330px;
+        height: 24px;
+        margin-top: -1px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .rectangle-2 {
+        position: relative;
+        width: 416px;
+        height: 138px;
+      }
+
+      .macbook-air .text-wrapper-5 {
+        position: absolute;
+        width: 330px;
+        height: 24px;
+        top: 35px;
+        left: 14px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000b2;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .frame-4 {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        position: absolute;
+        top: 433px;
+        left: 7px;
+      }
+
+      .macbook-air .frame-5 {
+        display: inline-flex;
+        height: 33px;
+        align-items: flex-start;
+        position: relative;
+      }
+
+      .macbook-air .component {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .text-wrapper-6 {
+        position: relative;
+        width: 112px;
+        height: 29px;
+        margin-top: -1px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000cc;
+        font-size: 20px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .frame-6 {
+        display: inline-flex;
+        align-items: flex-start;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .component-2 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-3 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-4.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-4 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-3.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-5 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-6 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-7 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .component-8 {
+        position: relative;
+        width: 42px;
+        height: 33px;
+        background-image: url(./img/unchecked-checkbox-2.png);
+        background-size: 100% 100%;
+      }
+
+      .macbook-air .button {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 329px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: absolute;
+        top: 814px;
+        left: 69px;
+        background-color: #ccbb23cc;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help {
+        position: relative;
+        width: fit-content;
+        margin-top: -13.5px;
+        margin-bottom: -11.5px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 24px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .rectangle-3 {
+        position: absolute;
+        width: 1280px;
+        height: 30px;
+        top: 1089px;
+        left: 0;
+        background-color: #fff7f7;
+      }
+
+      .macbook-air .div-wrapper {
+        position: absolute;
+        width: 516px;
+        height: 291px;
+        top: 1164px;
+        left: 91px;
+        background-color: #d9d9d9;
+      }
+
+      .macbook-air .text-wrapper-7 {
+        position: absolute;
+        width: 138px;
+        top: 15px;
+        left: 189px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .overlap-2 {
+        position: absolute;
+        width: 516px;
+        height: 291px;
+        top: 1164px;
+        left: 677px;
+        background-color: #d9d9d9;
+      }
+
+      .macbook-air .text-wrapper-8 {
+        position: absolute;
+        width: 173px;
+        top: 16px;
+        left: 171px;
+        font-family: "Inria Sans-Bold", Helvetica;
+        font-weight: 700;
+        color: #000000;
+        font-size: 25px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .nav-bar {
+        position: absolute;
+        width: 1280px;
+        height: 147px;
+        top: 0;
+        left: 0;
+      }
+
+      .macbook-air .overlap-3 {
+        position: relative;
+        width: 1282px;
+        height: 149px;
+        top: -1px;
+        left: -1px;
+        background-color: #fff7f7;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-color: #000000;
+      }
+
+      .macbook-air .l {
+        position: absolute;
+        width: 207px;
+        height: 147px;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+      }
+
+      .macbook-air .frame-7 {
+        display: flex;
+        width: 923px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 95px;
+        position: absolute;
+        top: 50px;
+        left: 296px;
+      }
+
+      .macbook-air .frame-8 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 0px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper-9 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Black", Helvetica;
+        font-weight: 900;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .eligibility {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .frame-9 {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        position: relative;
+        flex: 0 0 auto;
+      }
+
+      .macbook-air .text-wrapper-10 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+
+      .macbook-air .text-wrapper-11 {
+        position: relative;
+        width: fit-content;
+        margin-top: -1px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+        white-space: nowrap;
+      }
+
+      .macbook-air .yes-i-want-to-help-wrapper {
+        all: unset;
+        box-sizing: border-box;
+        display: flex;
+        width: 216px;
+        height: 71px;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        padding: 20px;
+        position: relative;
+        background-color: #ccbb23cc;
+        border-radius: 10px;
+      }
+
+      .macbook-air .yes-i-want-to-help-2 {
+        position: relative;
+        width: fit-content;
+        margin-top: -5px;
+        margin-bottom: -3px;
+        font-family: "Inter-Regular", Helvetica;
+        font-weight: 400;
+        color: #000000;
+        font-size: 32px;
+        letter-spacing: 0;
+        line-height: normal;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="macbook-air">
+      <div class="div">
+        <img class="s" src="img/s.png" />
+        <img class="img" src="img/s.png" />
+        <div class="overlap">
+          <div class="rectangle"></div>
+          <div class="group">
+            <div class="overlap-group">
+              <p class="text-wrapper">In which sector you want help</p>
+              <div class="frame">
+                <div class="label-wrapper">
+                  <div class="label">
+                    <div class="text-wrapper-2">Name</div>
+                    <div class="frame-2"></div>
+                    <div class="text-wrapper-3">name</div>
+                  </div>
+                </div>
+                <div class="label-wrapper">
+                  <div class="label">
+                    <div class="text-wrapper-2">Email</div>
+                    <div class="frame-2"></div>
+                    <div class="text-wrapper-3">email</div>
+                  </div>
+                </div>
+                <div class="label-wrapper">
+                  <div class="label">
+                    <div class="text-wrapper-2">Address</div>
+                    <div class="frame-2"></div>
+                    <div class="text-wrapper-3">address</div>
+                  </div>
+                </div>
+                <div class="doc-box">
+                  <div class="frame-3">
+                    <div class="text-wrapper-4">Document</div>
+                    <img class="rectangle-2" src="img/s.jpeg" />
+                    <div class="text-wrapper-5">Id proof</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-4">
+              <div class="frame-5">
+                <div class="component"></div>
+                <div class="text-wrapper-6">Food</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-2"></div>
+                <div class="text-wrapper-6">Shelter</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-3"></div>
+                <div class="text-wrapper-6">Health</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-4"></div>
+                <div class="text-wrapper-6">Farming</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-5"></div>
+                <div class="text-wrapper-6">Women</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-6"></div>
+                <div class="text-wrapper-6">Child</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-7"></div>
+                <div class="text-wrapper-6">Technology</div>
+              </div>
+              <div class="frame-6">
+                <div class="component-8"></div>
+                <div class="text-wrapper-6">Education</div>
+              </div>
+            </div>
+          </div>
+          <button class="button">
+            <div class="yes-i-want-to-help">Apply Now!</div>
+          </button>
+        </div>
+        <div class="rectangle-3"></div>
+        <div class="div-wrapper">
+          <div class="text-wrapper-7">RESOURCES</div>
+        </div>
+        <div class="overlap-2">
+          <div class="text-wrapper-8">FOLLOW US ON</div>
+        </div>
+        <div class="nav-bar">
+          <div class="overlap-3">
+            <img class="l" src="img/s.jpeg" />
+            <div class="frame-7">
+              <div class="frame-8">
+                <div class="text-wrapper-9">
+                  <a href="index.html">
+                    <div class="">Home</div>
+                  </a>
+                </div>
+              </div>
+              <div class="eligibility">
+                <div class="frame-9">
+                  <div class="text-wrapper-10">
+                    <a
+                      href="eligi.html
+                    "
+                      style="text-decoration: none"
+                    >
+                      eligibility
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="frame-8">
+                <div class="text-wrapper-11">
+                  <a href="contact.html" style="text-decoration: none">
+                    <div class="">contact us</div>
+                  </a>
+                </div>
+              </div>
+              <button class="yes-i-want-to-help-wrapper">
+                <div class="yes-i-want-to-help-2">
+                  <a href="donar.html">
+                    <div class="">Donate</div>
+                  </a>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
